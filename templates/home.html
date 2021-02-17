@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Homework 2 Home</title>
+        <title>
+            {% block title %} {% endblock%}
+        </title>
     </head>
     <body>
+        {% block content%}
         <h1>Homework 2 Routes</h1>
-        
         <ul>
             <li><a href="/froyo">Froyo</a></li>
             <li><a href="/favorites">Favorites</a></li>
@@ -13,6 +15,6 @@
             <li><a href="/calculator">Calculator</a></li>
             <li><a href="/horoscope">Horoscope</a></li>
         </ul>
-
+        {% endblock %}
     </body>
 </html>

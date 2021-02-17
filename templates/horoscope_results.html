@@ -1,14 +1,17 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Horoscope Results</title>
-    </head>
-    <body>
+{% extends 'horoscope_form.html' %}
         <!-- Your HTML code goes here! -->
+        {% block title %} 
+            HOROSCOPE <br>
+        {% endblock%}
 
-        
+        {% block content %}
+            Hello {{user_name}}!<br>
+            according to your birthday, your horoscope sign is a: {{horoscope_sign.upper()}}<br>
 
-        
-        
-    </body>
-</html>
+        This means your presonality is:<br>
+        {{personality}}<br>>
+
+        YOUR LUCKY NUMBER:<br>
+        {{lucky_number}}
+
+        {% endblock %}

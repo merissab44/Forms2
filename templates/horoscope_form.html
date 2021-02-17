@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Horoscope</title>
+
+        {% block title %}
+        horoscope
+        {% endblock %}
     </head>
     <body>
+        {% block content %}
         <h1>What's your personality?</h1>
         <form action="/horoscope_results" method="GET">
             <fieldset>
@@ -37,5 +41,6 @@
                 <input type="submit" value="Tell me my personality!">
             </fieldset>
         </form>
+        {% endblock %}
     </body>
 </html>
